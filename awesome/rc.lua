@@ -265,7 +265,10 @@ globalkeys = gears.table.join(
 	end, { description = "open firefox", group = "launcher" }),
 	awful.key({ modkey, "Control" }, "e", function()
 		awful.spawn("code")
-	end, { description = "open vscode", group = "launcher" })
+	end, { description = "open vscode", group = "launcher" }),
+	awful.key({ "Mod1" }, "q", function()
+		awful.spawn("dm-tool switch-to-greeter")
+	end, { description = "Logout", group = "awesome" })
 )
 
 clientkeys = gears.table.join(
