@@ -105,6 +105,10 @@ source $ZSH/oh-my-zsh.sh
 
 # My exports
 
+# Default editor
+export EDITOR='nvim'
+export VISUAL='nvim'
+
 # Reader for man pages
 export PAGER=less
 export MANPAGER=less
