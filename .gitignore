@@ -1,4 +1,37 @@
+# Entire folders
 Code - OSS/
 dconf
 pulse
 go
+
+# Compiled Zsh scripts
+*.zwc
+*.zwc.old
+
+# Zsh completion dump files
+.zcompdump*
+.zcompdump*zwc
+
+# Zsh history files
+.zsh_history
+.zsh_history.old
+
+# Zsh session files
+.zsh_sessions
+
+# Oh My Zsh custom plugins and themes
+custom/plugins/*
+custom/themes/*
+
+# Oh My Zsh log files
+oh-my-zsh.log
+
+# Zsh autosuggestions data
+.zsh-autosuggestions
+
+# Zsh syntax highlighting cache
+.zsh-syntax-highlighting
+
+# Zsh plugin manager files (e.g., zinit, antigen)
+.zinit
+.antigen
