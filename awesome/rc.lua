@@ -466,7 +466,7 @@ end)
 awful.spawn.with_shell("picom -b")
 
 -- Set gaps between window tiles
-beautiful.useless_gap = 10
+beautiful.useless_gap = 5
 
 -- Gradient borders
 
