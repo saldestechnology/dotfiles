@@ -467,3 +467,49 @@ awful.spawn.with_shell("picom -b")
 
 -- Set gaps between window tiles
 beautiful.useless_gap = 10
+
+-- Gradient borders
+
+local gradient = gears.color {
+	type = 'linear',
+	from = { 0, 0 },
+	to = { 0, 20 },
+	stops = {
+		{ 0, "#A150F2" },
+		{ 1, "#ED90CF" }
+	}
+}
+
+client.connect_signal("request::titlebars", function(c)
+    -- Top border
+    awful.titlebar(c, {
+        position = "top",
+        size = 1,
+        bg = gradient,
+        fg = beautiful.fg_normal
+    })
+
+    -- Right border
+    awful.titlebar(c, {
+        position = "right",
+        size = 1,
+        bg = gradient,
+        fg = beautiful.fg_normal
+    })
+
+    -- Bottom border
+    awful.titlebar(c, {
+        position = "bottom",
+        size = 1,
+        bg = gradient,
+        fg = beautiful.fg_normal
+    })
+
+    -- Left border
+    awful.titlebar(c, {
+        position = "left",
+        size = 1,
+        bg = gradient,
+        fg = beautiful.fg_normal
+    })
+end)
