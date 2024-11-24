@@ -268,7 +268,13 @@ globalkeys = gears.table.join(
 	end, { description = "open vscode", group = "launcher" }),
 	awful.key({ "Mod1" }, "q", function()
 		awful.spawn("dm-tool switch-to-greeter")
-	end, { description = "Logout", group = "awesome" })
+	end, { description = "Logout", group = "awesome" }),
+  awful.key({ modkey, "Shift" }, "r", function()
+    awful.spawn.with_shell("sh ~/.config/rofi/launchers/type-7/launcher.sh")
+  end, { description = "run application", group = "launcher" }),
+  awful.key({}, "Print", function()
+    awful.spawn("flameshot gui")
+  end, { description = "print screen", group = "hotkeys" })
 )
 
 clientkeys = gears.table.join(
