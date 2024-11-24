@@ -35,3 +35,12 @@ oh-my-zsh.log
 # Zsh plugin manager files (e.g., zinit, antigen)
 .zinit
 .antigen
+
+# Discord
+discord
+
+# Signal
+Signal
+
+# VPN
+*VPN
