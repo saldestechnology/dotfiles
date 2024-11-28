@@ -14,6 +14,11 @@ A collection of dotfiles as per my likings.
 
 This is my primary setup but there's more config files available but that's less important as far as I am concerned.
 
+## NvChad extended configs
+
+- Added lua language server
+- Added inlay hints
+
 ## Screenshots
 
 ![Standard setup](screenshots/2024-11-24_00-17.png "Standard")

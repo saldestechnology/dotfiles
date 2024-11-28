@@ -12,7 +12,12 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    "simrat39/inlay-hints.nvim",
+    config = function ()
+      require("inlay-hints").setup()
+    end,
+  }
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
